@@ -1,6 +1,7 @@
-const a = 10;
-if (a >= 10) {
-    console.log("Yes")
+const arg = process.argv[2];
+
+if (arg === undefined) {
+  console.log("No argument");
 } else {
-    console.log("No arguments")
+  console.log(arg);
 }
